@@ -16,3 +16,8 @@ This repo is the capstone project proving: "I can build deployed, multilingual A
 
 ## Site structure
 Home → Work → About → Contact (see README for details)
+
+## Rules learned from prompting drill
+- Always specify field-level validation rules explicitly (required, min/max length, format) — never assume the model will guess the right constraints.
+- Every form or logic-handling feature must include a verification step in the prompt ("write it, then write tests and run them") — vague prompts skip tests entirely.
+- Project context files (CLAUDE.md, README.md) get pulled in automatically, so even short prompts inherit conventions — don't mistake a short prompt for a context-free one.
